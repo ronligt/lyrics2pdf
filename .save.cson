@@ -1,0 +1,1 @@
+"lyrics/*.md": 'mkdir -p build ; pandoc -f markdown+hard_line_breaks -H style.tex -H columns.tex -H title.tex -B predoc.tex -A postdoc.tex "lyrics/${file}" -o "build/${name}.pdf"'
