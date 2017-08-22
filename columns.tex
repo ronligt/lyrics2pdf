@@ -1,0 +1,28 @@
+\usepackage{environ}
+\usepackage{multicol}
+
+\newsavebox{\songbox}
+
+\NewEnviron{song}{% can also have arguments
+    % \clearpage
+    % Add song title, at as argument etc.
+    %
+    % The content is \BODY
+    % Let's save it in normal single column mode:
+    \savebox{\songbox}{%
+    \begin{minipage}{\linewidth}%
+        \BODY
+    \end{minipage}%
+    }%
+    % To high? (Replace \textheight if required)
+    % \ht = hight, \dp = depth, both together is the total height
+    \ifnum\dimexpr\ht\songbox+\dp\songbox > \textheight
+        % Typeset again in two column mode:
+        \begin{multicols}{2}%
+           \BODY
+        \end{multicols}%
+    \else
+        % Size is already OK, so use the content of the saved box:
+        \usebox{\songbox}%
+    \fi
+}

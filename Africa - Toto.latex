@@ -1,0 +1,128 @@
+\documentclass[12pt,]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={Africa},
+            pdfauthor={Toto},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage[margin=.5in]{geometry}
+\usepackage{multicol}
+
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\baselinestretch}{1.5}
+\makeatletter
+\def\maketitle{%
+% \twocolumn[%
+\par%
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} c @{\extracolsep{\fill}} r}
+& \Huge{\textbf{\@title}} & \Large{\@author}%
+\end{tabular*}%
+% \vspace{1.0in}%
+% ]%
+}%
+\makeatother
+
+\title{Africa}
+\author{Toto}
+\date{}
+
+\begin{document}
+\maketitle
+
+\topskip0pt
+\vspace*{\fill}
+
+\begin{multicols}{0}
+
+I hear the drums echoing tonight\\
+But she hears only whispers of some quiet conversation\\
+She's coming in, 12:30 flight\\
+The moonlit wings reflect the stars that guide me towards salvation\\
+I stopped an old man along the way\\
+Hoping to find some long forgotten words or ancient melodies\\
+He turned to me as if to say, ``Hurry boy, it's waiting there for you''
+
+It's gonna take a lot to take me away from you\\
+There's nothing that a hundred men or more could ever do\\
+I bless the rains down in Africa\\
+Gonna take some time to do the things we never had
+
+The wild dogs cry out in the night\\
+As they grow restless, longing for some solitary company\\
+I know that I must do what's right\\
+As sure as Kilimanjaro rises like Olympus above the Serengeti\\
+I seek to cure what's deep inside, frightened of this thing that I've
+become
+
+It's gonna take a lot to drag me away from you\\
+There's nothing that a hundred men or more could ever do\\
+I bless the rains down in Africa\\
+Gonna take some time to do the things we never had
+
+Hurry boy, she's waiting there for you
+
+It's gonna take a lot to drag me away from you\\
+There's nothing that a hundred men or more could ever do\\
+I bless the rains down in Africa\\
+I bless the rains down in Africa\\
+(I bless the rain)\\
+I bless the rains down in Africa\\
+(I bless the rain)\\
+I bless the rains down in Africa\\
+I bless the rains down in Africa\\
+(Ah, gonna take the time)\\
+Gonna take some time to do the things we never had
+
+\end{multicols}
+\vspace*{\fill}
+
+\end{document}
