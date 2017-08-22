@@ -18,9 +18,9 @@
     % \ht = hight, \dp = depth, both together is the total height
     \ifnum\dimexpr\ht\songbox+\dp\songbox > \textheight
         % Typeset again in two column mode:
-        \begin{multicols}{2}%
+        \begin{multicols*}{2}%
            \BODY
-        \end{multicols}%
+        \end{multicols*}%
     \else
         % Size is already OK, so use the content of the saved box:
         \usebox{\songbox}%

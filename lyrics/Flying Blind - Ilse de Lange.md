@@ -13,7 +13,7 @@ Love is so uncertain
 Who can say what's in store
 This is deeper, farther, higher
 Than I've been before
-\
+
 *Chorus*
 I'm flying blind
 Wherever your love takes me
@@ -22,7 +22,7 @@ I'll close my eyes with you beside me
 I follow faith and let it guide me
 Tonight I'm leaving all my fears behind
 I'm flying blind
-\
+
 *Verse*
 I won't question tomorrow
 It's a mystery to me
@@ -33,7 +33,7 @@ I don't want to come down
 Play my heart
 Got my cards on the table
 Got my head up in the clouds
-\
+
 *Chorus*
 I'm flying blind
 Wherever your love takes me
